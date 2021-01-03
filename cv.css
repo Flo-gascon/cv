@@ -1,0 +1,292 @@
+*{
+    font-family: "Avenir", sans-serif;
+    padding:0px;
+    margin:0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ededed;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+a{
+    color: #000;
+}
+
+
+@media screen and(min-width:980px){
+    section{
+        box-shadow: 0px 0px 10px #bbb;
+        width:80%;   
+    }
+    
+    a:hover{
+    color: aquamarine;
+    }
+    
+    header h1{
+        width: 80%;
+    }
+    
+    .prez, .contact{
+        flex: 0 0 45%;   
+    }
+    
+    .prez{
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+
+}
+
+
+/*header*/
+
+header{
+    width:100%;
+    padding:20px 0px;
+    border-bottom: 2px solid  #FFF ;
+    height:120px;
+    background-color: aquamarine;
+}
+
+header h1{
+    width:90%;
+    margin:0 auto;
+    text-align: center;
+}
+
+header h3{
+    width:90%;
+    margin:0 auto;
+    text-align: center;
+}
+
+
+/*section*/
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width:100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #FFF;
+}
+
+section h2{
+    margin: 20px 0;
+    width:100%;
+    text-align: center;
+}
+
+section >div {
+    width: 90%;
+}
+
+.section-title{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+
+/*photo de profil*/
+
+.photo{
+    text-align: center
+}
+
+.photo img{
+    width:200px;
+    height:200px;
+    border: 3px solid #FFF;
+    box-shadow: 0px 0px 10px #777;
+    border-radius:50%;
+    border-top:-80px;
+}
+
+
+/*presentation*/
+
+.prez{
+    border-bottom: 2px dashed  #6af9c3 ;
+}
+
+.prez a{
+    display:block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #FFF;
+    background-color: #EA0;
+    box-shadow: 0px 0px 10px #CCC;
+    border-radius:5px;
+}
+
+
+/*contact*/
+
+.contact{
+    margin-top: 10px;
+}
+
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+}
+
+.contact-flex p:first-child{
+    flex: 0 0 30%;
+}
+
+.contact-flex p:last-child{
+    flex: 0 0 70%;
+}
+
+
+/*experience pro*/
+
+.exp{
+    display:flex;
+    flex-flow:row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 0 90%;
+    margin-left:auto;
+}
+
+.exp-logo{
+    flex: 0 0 10%;
+    max-width: 80px;
+}
+
+.exp-desc{
+    flex: 0 0 90%;
+    margin-left: auto;
+}
+
+.exp img{
+    width:100%;
+    border-radius: 10%;
+    border-style: groove;
+    border-color: black;
+}
+
+.exp h3{
+    font-size:1.2em;
+}
+
+.exp h4{
+    font-size:1em;
+    font-weight: normal;
+}
+
+
+/*competences*/
+
+.comp-block{
+    display: flex;
+    align-items: flex-start
+}
+
+.comp{
+    display:flex;
+    flex-flow: column wrap;
+    align-items:center;
+    margin: 0 50px 20px 20px;
+}
+
+.comp h6{
+    font-weight: bold;
+}
+
+.comp img{
+    border-radius: 10%;
+    border-style: groove;
+    border-color: black;
+}
+
+.fa{
+    margin:10px;
+    color: aquamarine;
+}
+
+.comp2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.c90{
+    width: 90%;
+    background-color: aquamarine;
+}
+
+.c95{
+    width: 95%;
+    background-color: aquamarine;
+}
+
+
+/*centres d'interets*/
+
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.interet img{
+    width:275px;
+    height: 200px;
+    border-radius:30%;
+    box-shadow: 0px 0px 15px #555;
+}
+
+figcaption{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
