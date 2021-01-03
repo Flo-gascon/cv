@@ -19,40 +19,6 @@ a{
     color: #000;
 }
 
-
-@media screen and(min-width:980px){
-    section{
-        box-shadow: 0px 0px 10px #bbb;
-        width:80%;   
-    }
-    
-    a:hover{
-    color: aquamarine;
-    }
-    
-    header h1{
-        width: 80%;
-    }
-    
-    .prez, .contact{
-        flex: 0 0 45%;   
-    }
-    
-    .prez{
-        border-bottom: none;
-        border-right: 2px solid #ccc;
-        padding-right: 20px;
-        margin-left: auto;
-    }
-    
-    .contact{
-        padding-left: 20px;
-        margin-right: auto;
-    }
-
-}
-
-
 /*header*/
 
 header{
@@ -123,7 +89,7 @@ section >div {
 
 
 /*presentation*/
-
+    
 .prez{
     border-bottom: 2px dashed  #6af9c3 ;
 }
@@ -207,21 +173,26 @@ section >div {
 
 
 /*competences*/
+.competences{
+    display: flex;
+    flex-flow: column wrap;
+}
 
 .comp-block{
     display: flex;
-    align-items: flex-start
+    flex-flow: row wrap;
+    margin-left: 20px;
 }
 
 .comp{
     display:flex;
-    flex-flow: column wrap;
-    align-items:center;
-    margin: 0 50px 20px 20px;
+    flex-flow: row wrap;
+    width:100%;
 }
 
-.comp h6{
+.comp-block h6{
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .comp img{
@@ -241,6 +212,7 @@ section >div {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 
 .conteneur-barre2{
     flex: 0 0 100%;
@@ -290,3 +262,50 @@ figcaption{
     margin-top: 10px;
 }
 
+
+
+@media all and(min-width: 1024px){
+    section{
+        box-shadow: 0px 0px 10px #bbb;
+        width:80%;   
+    }
+    
+    a:hover{
+    color: aquamarine;
+    }
+    
+    header h1{
+        width: 80%;
+    }
+    
+    .prez, .contact{
+        display:flex;
+        flex-flow: column wrap;
+        flex: 0 0 45%;   
+    }
+    
+    .prez{
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    
+    .comp-block{
+    display: flex;
+    align-items: flex-start
+    }
+
+    .comp{
+        display:flex;
+        flex-flow: column wrap;
+        align-items:center;
+        margin: 0 50px 20px 20px;
+    }
+
+}
