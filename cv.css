@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #ededed;
-}
 
 p{
     font-size: 1em;
@@ -24,9 +21,8 @@ a{
 header{
     width:100%;
     padding:20px 0px;
-    border-bottom: 2px solid  #FFF ;
     height:120px;
-    background-color: aquamarine;
+    background: url(img/background.jpg);
 }
 
 header h1{
@@ -41,6 +37,16 @@ header h3{
     text-align: center;
 }
 
+/*footer*/
+
+footer{
+    border-top:2px solid  #FFF ;
+    background-image: url(img/background.jpg);
+    height:120px;
+    width:100%;
+    padding:20px 0px;
+}
+
 
 /*section*/
 
@@ -49,10 +55,8 @@ section{
     flex-flow: row wrap;
     justify-content: center;
     width:100%;
-    padding-bottom: 20px;
-    margin: 20px auto;
-    box-shadow: 0px 0px 10px #bbb;
-    background-color: #FFF;
+    padding-bottom: 10px;
+    margin: 10px auto;
 }
 
 section h2{
@@ -89,10 +93,6 @@ section >div {
 
 
 /*presentation*/
-    
-.prez{
-    border-bottom: 2px dashed  #6af9c3 ;
-}
 
 .prez a{
     display:block;
@@ -100,7 +100,7 @@ section >div {
     padding: 10px;
     margin: 10px auto 30px auto;
     color: #FFF;
-    background-color:  #fc976c ;
+    background-color: #fcca6c ;
     box-shadow: 0px 0px 10px #CCC;
     border-radius:5px;
 }
@@ -109,7 +109,8 @@ section >div {
 /*contact*/
 
 .contact{
-    margin-top: 10px;
+    margin: 10px 0 10px 20px;
+    width:90%;
 }
 
 .contact-flex{
@@ -124,6 +125,12 @@ section >div {
 
 .contact-flex p:last-child{
     flex: 0 0 70%;
+}
+
+.contact-block1, .contact-block2{
+    display:flex;
+    flex-flow: column wrap;
+    flex: 0 0 45%; 
 }
 
 
@@ -203,7 +210,7 @@ section >div {
 
 .fa{
     margin:10px;
-    color: aquamarine;
+    color:crimson;
 }
 
 .comp2{
@@ -230,12 +237,12 @@ section >div {
 }
 .c90{
     width: 90%;
-    background-color: aquamarine;
+    background-color:  #48c9b0 ;
 }
 
 .c95{
     width: 95%;
-    background-color: aquamarine;
+    background-color:  #48c9b0 ;
 }
 
 
