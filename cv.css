@@ -46,7 +46,7 @@ header h3{
 footer{
     border-top:2px solid  #FFF ;
     background-image: url(img/background-fleuri.png);
-    height:120px;
+    height:180px;
     width:100%;
     padding:20px 0px;
 }
@@ -122,23 +122,17 @@ section >div {
 .contact-flex{
     display: flex;
     flex-flow: row wrap;
-    align-items:center;
 }
 
 .contact-flex p:first-child{
-    flex: 0 0 30%;
+    flex: 0 0 40%;
 }
 
 .contact-flex p:last-child{
-    flex: 0 0 70%;
+    flex: 0 0 50%;
+    font-style: italic;
+    font-family: 'Big Caslon', serif;
 }
-
-.contact-block1, .contact-block2{
-    display:flex;
-    flex-flow: column wrap;
-    flex: 0 0 45%; 
-}
-
 
 /*experience pro*/
 
@@ -186,16 +180,6 @@ section >div {
 
 
 /*competences*/
-.competences{
-    display: flex;
-    flex-flow: column wrap;
-}
-
-.comp-block{
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 20px;
-}
 
 .comp{
     display:flex;
@@ -203,7 +187,7 @@ section >div {
     width:100%;
 }
 
-.comp-block h6{
+.comp-block{
     font-weight: bold;
     text-decoration: underline;
 }
@@ -277,48 +261,39 @@ figcaption{
 
 
 
-@media all and(min-width: 1024px){
-    section{
-        box-shadow: 0px 0px 10px #bbb;
-        width:80%;   
-    }
-    
-    a:hover{
-    color: aquamarine;
-    }
-    
+@media all and (max-device-width: 780px){
+
     header h1{
         width: 80%;
     }
     
-    .prez, .contact{
-        display:flex;
-        flex-flow: column wrap;
-        flex: 0 0 45%;   
+    h6, h4{
+        font-size:14px;
     }
     
-    .prez{
-        border-bottom: none;
-        border-right: 2px solid #ccc;
-        padding-right: 20px;
-        margin-left: auto;
+    li{
+        font-size:13px;
     }
     
     .contact{
-        padding-left: 20px;
-        margin-right: auto;
+        margin:auto;
     }
     
-    .comp-block{
-    display: flex;
-    align-items: flex-start
+    .contact-flex p{
+        font-size: 13px;
     }
+    
+    .contact-flex a{
+        font-size: 10px;
+    }
+
 
     .comp{
         display:flex;
         flex-flow: column wrap;
         align-items:center;
-        margin: 0 50px 20px 20px;
+        margin: auto;
     }
+    
 
 }
