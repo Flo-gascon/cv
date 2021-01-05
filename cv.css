@@ -280,11 +280,15 @@ figcaption{
     }
     
     .contact-flex p{
-        font-size: 13px;
+        font-size: 15px;
     }
     
     .contact-flex a{
-        font-size: 10px;
+        font-size: 13px;
+    }
+    
+    footer{
+        height:auto;
     }
 
 
